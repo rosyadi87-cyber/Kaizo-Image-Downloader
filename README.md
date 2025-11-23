@@ -1,7 +1,7 @@
 # ⬇ Kaizo Image Downloader
 Image Downloader for imagebam.com imgbox.com postimg.cc ibb.co.com
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
 
