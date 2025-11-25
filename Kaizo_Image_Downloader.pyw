@@ -477,7 +477,9 @@ class UniversalDownloader:
             if anchor and anchor.get('href'):
                 self.root.after(0, self.update_item, iid, LANG[self.current_lang]["stat_conn"])
                 session.cookies.set('sfw_inter', '1', domain='imagebam.com')
+                session.cookies.set('nsfw_inter', '1', domain='imagebam.com')
                 session.cookies.set('sfw_inter', '1', domain='www.imagebam.com')
+                session.cookies.set('nsfw_inter', '1', domain='www.imagebam.com')
                 next_url = anchor['href']
                 resp2 = session.get(next_url, timeout=10)
                 soup2 = BeautifulSoup(resp2.text, "html.parser")
@@ -582,3 +584,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = UniversalDownloader(root)
     root.mainloop()
+
